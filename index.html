@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portfólio</title>
+    <meta name="description" content="Portfólio de Paulo Lima, um desenvolvedor full-stack especializado em criar soluções web modernas e eficientes.">
+    <link rel="shortcut icon" href="imagens/programacao.png" type="image/x-icon"> 
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #0f172a; 
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #334155; 
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-slate-300">
+
+    <header id="header" class="bg-slate-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-white hover:text-cyan-400 transition-colors">Paulo Lima</a>
+            
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">Sobre</a>
+                <a href="#skills" class="hover:text-cyan-400 transition-colors">Habilidades</a>
+                <a href="#projects" class="hover:text-cyan-400 transition-colors">Projetos</a>
+                <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-full transition-colors">Contato</a>
+            </div>
+
+            <button id="mobile-btn" class="md:hidden">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800">
+            <a href="#about" class="block py-2 px-6 text-sm hover:bg-slate-700 transition-colors">Sobre</a>
+            <a href="#skills" class="block py-2 px-6 text-sm hover:bg-slate-700 transition-colors">Habilidades</a>
+            <a href="#projects" class="block py-2 px-6 text-sm hover:bg-slate-700 transition-colors">Projetos</a>
+            <a href="#contact" class="block py-2 px-6 text-sm hover:bg-slate-700 transition-colors">Contato</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="min-h-screen container mx-auto px-6 flex flex-col justify-center items-center text-center">
+
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                <span class="text-slate-400">Olá, eu sou</span><br>
+                Paulo Lima
+            </h1>
+            <h2 id="subtitle" class="text-2xl md:text-3xl font-semibold text-cyan-400 mt-4 h-10">
+                </h2>
+            <p class="mt-6 text-lg max-w-xl text-slate-400">
+                Apaixonado por transformar ideias em realidade através do código, criando aplicações web robustas, escaláveis e com ótimas experiências de usuário.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                <a href="#projects" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-6 rounded-full text-center transition duration-300">
+                    Meus Projetos
+                </a>
+                <a href="https://www.linkedin.com/in/devpaulolima/" target="_blank" class="text-white font-bold py-3 px-6 rounded-full border-2 border-slate-500 hover:bg-slate-700 text-center transition duration-300">
+                    <i class="fa-brands fa-linkedin mr-2"></i> LinkedIn
+                </a>
+                <a href="https://github.com/paulolima99" target="_blank" class="text-white font-bold py-3 px-6 rounded-full border-2 border-slate-500 hover:bg-slate-700 text-center transition duration-300">
+                    <i class="fa-brands fa-github mr-2"></i> GitHub
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-slate-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white mb-12">Sobre Mim</h2>
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="w-full md:w-1/3 flex justify-center">
+                        <img src="imagens/IMG_1419 (1).jpg" alt="Paulo Lima" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-cyan-500">
+                    </div>
+                    <div class="w-full md:w-2/3 text-lg text-slate-400">
+                        <p>
+                            Sou um desenvolvedor Full-Stack em início de carreira, com foco na criação de aplicações web completas, modernas e eficientes. Minha trajetória na programação começou ao observar amigos desenvolvendo projetos web — aquilo despertou minha curiosidade e motivação para aprender. Desde então, tenho me dedicado intensamente a estudar e aplicar as melhores tecnologias do mercado.
+                        </p>
+                        <p class="mt-4">
+                            Tenho um perfil proativo e colaborativo, sempre em busca de desafios que me permitam crescer profissionalmente. Acredito que a combinação de um back-end sólido com um front-end intuitivo é a chave para o sucesso de qualquer projeto digital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white mb-12">Habilidades Técnicas</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-cyan-400 mb-4"><i class="fas fa-code mr-2"></i>Front-end</h3>
+                        <ul class="space-y-2 text-slate-400">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript</li>
+                            <li>TypeScript</li>
+                            <li>React.js / Next.js</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h3 class="text-2xl font-semibold text-cyan-400 mb-4"><i class="fas fa-server mr-2"></i>Back-end</h3>
+                        <ul class="space-y-2 text-slate-400">
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>APIs RESTful</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- Meus projetos -->
+        <section id="projects" class="py-20 bg-slate-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white mb-12">Meus Projetos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    
+                    <div class="bg-slate-800 rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 shadow-lg shadow-slate-950/50">
+                        <img src="imagens/Captura de tela 2025-08-28 220744.png" alt="Nome do Projeto 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Tela de Login</h3>
+                            <p class="text-slate-400 mb-4 text-sm">
+                                Tela de login responsiva
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-sky-900/50 text-sky-300 text-xs font-semibold px-2.5 py-1 rounded-full">HTML</span>
+                                <span class="bg-purple-900/50 text-purple-300 text-xs font-semibold px-2.5 py-1 rounded-full">JavaScript</span>
+                                <span class="bg-emerald-900/50 text-emerald-300 text-xs font-semibold px-2.5 py-1 rounded-full">Css</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-6">
+                                <a href="https://paulolima99.github.io/TelaDeLogin/" target="_blank" class="text-cyan-400 hover:underline">Ver Demo <i class="fa-solid fa-arrow-up-right-from-square text-sm ml-1"></i></a>
+                                <a href="https://github.com/paulolima99/TelaDeLogin" target="_blank" class="text-slate-400 hover:text-white text-2xl transition-colors"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-800 rounded-lg overflow-hidden transform        hover:-translate-y-2 transition-transform duration-300 shadow-lg            shadow-slate-950/50">
+                        <img src="imagens/imagem_lista_de_compras.png" alt="Nome do Projeto 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Lista de compras</h3>
+                            <p class="text-slate-400 mb-4 text-sm">
+                                Uma aplição web aonde um usuário pode adicionar ou remover intens
+                                de uma lista de compras personalizda
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-2.5 py-1 rounded-full">HTML</span>
+                                <span class="bg-orange-900/50 text-orange-300 text-xs font-semibold px-2.5 py-1 rounded-full">CSS</span>
+                                <span class="bg-red-900/50 text-red-300 text-xs font-semibold px-2.5 py-1 rounded-full">JavaScript</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-6">
+                                <a href="https://paulolima99.github.io/listaDeCompras/" target="_blank" class="text-cyan-400 hover:underline">Ver Demo <i class="fa-solid fa-arrow-up-right-from-square text-sm ml-1"></i></a>
+                                <a href="https://github.com/paulolima99/listaDeCompras" target="_blank" class="text-slate-400 hover:text-white text-2xl transition-colors"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="py-20">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center text-white mb-12">Certificados</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- certificado -->
+      <div class="bg-slate-800 rounded-lg overflow-hidden shadow-lg shadow-slate-950/50 p-6">
+        <img src="imagens/image.png" alt="Certificado jornada Python" class="w-full h-auto mb-4 rounded-md">
+        <h3 class="text-xl font-bold text-white mb-2">Jornada Python (Evento)</h3>
+        <p class="text-slate-400 text-sm mb-4">Hashtag Treinamentos </p>
+         <button onclick="openModal()" class="text-cyan-400 hover:underline">Ver Certificado</button>
+      </div>
+      <!--Visualizar o certificado na tela -->
+      <div id="modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+    <div class="relative bg-white rounded-lg p-4 max-w-3xl w-full">
+        <button onclick="closeModal()" class="absolute top-2 right-2 text-black text-xl font-bold">&times;</button>
+        <img src="imagens/image.png" alt="Certificado" class="w-full h-auto rounded-md">
+    </div>
+</div>
+    </div>
+  </div>
+</section>
+        
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-white mb-4">Vamos Conversar!</h2>
+                <p class="text-center text-slate-400 mb-12 max-w-2xl mx-auto">
+                    Estou sempre aberto a novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato através do formulário abaixo ou pelas minhas redes sociais.
+                </p>
+                <form action="#" method="POST" class="max-w-xl mx-auto">
+                    <div class="mb-4">
+                        <label for="name" class="block text-slate-400 mb-2">Nome</label>
+                        <input type="text" id="name" name="name" class="w-full bg-slate-800 border border-slate-700 rounded-lg py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-slate-400 mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full bg-slate-800 border border-slate-700 rounded-lg py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-slate-400 mb-2">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" class="w-full bg-slate-800 border border-slate-700 rounded-lg py-2 px-4 text-white focus:outline-none focus:ring-2 focus:ring-cyan-500" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800/50">
+        <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-slate-400 text-center md:text-left">
+                &copy; 2025 Paulo Lima. Todos os direitos reservados.
+            </p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="https://github.com/paulolima99" target="_blank" class="text-slate-400 hover:text-white text-2xl transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/devpaulolima/" target="_blank" class="text-slate-400 hover:text-white text-2xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:paulojmatiass@gmail.com" class="text-slate-400 hover:text-white text-2xl transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+  <button id="voltaraotopo" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" 
+    class="hidden fixed bottom-6 right-6 bg-cyan-500 hover:bg-cyan-600 text-white p-3 rounded-full shadow-lg z-50">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
